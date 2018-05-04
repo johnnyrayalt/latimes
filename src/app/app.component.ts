@@ -17,7 +17,7 @@ export class AppComponent{
     }
   }
 
-  // displayArticle(article) {
-  //   this.articles.push(article);
-  // }
+  displayArticle(article) {
+    console.log(article.headline);
+  }
 }
