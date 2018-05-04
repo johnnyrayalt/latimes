@@ -5,7 +5,7 @@ export class Article {
     public headline: string,
     public images: string,
     public blurb: string,
-    public datetime: string,
+    public datePublished: string,
     public author: Author
   ) { }
 }
