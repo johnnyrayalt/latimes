@@ -1,5 +1,4 @@
 import { Author } from "./author.model";
-
 export class Article {
   constructor(
     public headline: string,
