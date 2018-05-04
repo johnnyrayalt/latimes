@@ -1,11 +1,11 @@
 <div class="article-container-outer" *ngFor="let currentArticle of articles">
   <div class="article-container-inner">
 
-    <div class="article-images">
+    <div class="article-images link">
       <img src="{{currentArticle.images}}" alt="">
     </div>
 
-    <div class="article-headline">
+    <div class="article-headline link">
       {{currentArticle.headline}}
     </div>
 
@@ -15,7 +15,7 @@
 
     <div class="author">
       <p>
-        <img src="{{currentArticle.author.photo}}" alt="">By {{currentArticle.author.name}} | {{currentArticle.datePublished}}
+        <img src="{{currentArticle.author.photo}}" class="author-photo link" alt="">  By <span class="link">{{currentArticle.author.name}}</span> | {{currentArticle.datePublished}}
       </p>
     </div>
   </div>
