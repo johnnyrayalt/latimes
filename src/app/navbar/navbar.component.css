@@ -88,7 +88,7 @@ ul.center-nav li, li a{
 
 #subnav {
   width: 100%;
-  margin: 0;
-  position: fixed;
-  z-index: 99999999;
+  margin: auto;
+  z-index: 99999998;
+  padding-top: 100px;
 }
