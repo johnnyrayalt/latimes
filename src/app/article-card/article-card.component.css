@@ -3,9 +3,8 @@
 }
 
 .article-container-outer {
-  max-width:100%;
+  max-width:30%;
   padding: 20px;
-  background-color: white;
 }
 .article-container-outer img{
   max-width:100%;

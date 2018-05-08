@@ -1,22 +1,23 @@
-<div class="article-container-outer" *ngFor="let currentArticle of articles">
-  <div class="article-container-inner">
+<ul class="list-unstyled article-container-outer mb-40">
+  <li class="article-container-inner mb-40 card-body card" *ngFor="let article of articles">
 
-    <div class="article-images link">
-      <img src="{{currentArticle.images}}" alt="">
-    </div>
+      <div class="article-images link">
+        <img src="{{article.images}}" alt="">
+      </div>
 
-    <div class="article-headline link">
-      {{currentArticle.headline}}
-    </div>
+      <div class="article-headline link">
+        {{article.headline}}
+      </div>
 
-    <div class="article-blurb">
-      {{currentArticle.blurb}}
-    </div>
+      <div class="article-blurb">
+        {{article.blurb}}
+      </div>
 
-    <div class="author">
-      <p>
-        <img src="{{currentArticle.author.photo}}" class="author-photo link" alt="">  By <span class="link">{{currentArticle.author.name}}</span> | {{currentArticle.datePublished}}
-      </p>
-    </div>
-  </div>
-</div>
+      <div class="author">
+        <p>
+          <img src="{{article.author.photo}}" class="author-photo link" alt="">  By <span class="link">{{article.author.name}}</span> | {{article.datePublished}}
+        </p>
+      </div>
+
+  </li>
+</ul>
