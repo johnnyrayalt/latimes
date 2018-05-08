@@ -7,18 +7,7 @@ import { Article } from "./../models/article.model";
   styleUrls: ['./article-card.component.css']
 })
 export class ArticleCardComponent implements OnInit {
-  article: Article = {
-    headline: '',
-    images: '',
-    blurb: '',
-    datePublished: Date,
-    author: {
-      name: '',
-      photo: '',
-      bio: ''
-    }
-  };
-
+  article: Article
   articles: Article[];
 
   ngOnInit() {
