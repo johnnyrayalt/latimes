@@ -1,7 +1,11 @@
 .nav-container {
   width: 100%;
   margin: 0;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+}
+
+.nav-container a {
+  text-decoration: none;
 }
 
 #sticky {
@@ -20,17 +24,13 @@
   background-color: #333
 }
 
-.inner-sticky-nav {
-  padding: 5px;
-}
-
 .left-nav {
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .left-nav-item, .left-nav-item a {
   padding: 0 10px;
-  font-size: 26px;
+  font-size: 10px;
   text-transform: uppercase;
   color: white;
 }
@@ -39,6 +39,10 @@
   padding: 0;
   width: 100%;
   text-align: center;
+}
+
+.center-nav {
+  margin: auto;
 }
 
 .center-nav-item {
@@ -50,26 +54,33 @@ ul.center-nav li, li a{
   display: inline;
   color: white;
   margin: auto;
+  font-size: 10px;
+}
+
+li a:hover {
+  border-bottom: 1px solid white;
 }
 
 .right-nav {
   width: 100%;
 }
 
-.right-nav-item {
-  margin:auto 0;
-}
-
 .btn {
   background-color: #4492E0;
   max-width:100%;
-  margin: 0;
+  margin: 5px auto;
+  padding: 0;
+  line-height: 1;
 }
 
 .button-text {
-  font-size: 26px;
+  font-size: 14px;
   color: white;
+  line-height: 1;
+}
 
+.button-subtext {
+  font-size: 10px;
 }
 
 #subscribe {
@@ -79,16 +90,91 @@ ul.center-nav li, li a{
 #logIn {
   width: 30%;
   text-align: center;
+  margin: auto;
 }
 
 #logIn a {
   color: white;
-  font-size: 26px;
+  font-size: 10px;
 }
 
-#subnav {
+.sub-tert-styles {
   width: 100%;
   margin: auto;
   z-index: 99999998;
-  padding-top: 100px;
+  background-color: white;
+  border-bottom: 1px solid #afafaf;
+}
+
+#subnav
+ {
+  height: 175px;
+ }
+
+#tertiarynav {
+  height: 50px;
+}
+
+.inner-subnav {
+  width:100%;
+  margin:0 auto;
+}
+
+.left-subnav {
+  margin: auto;
+  padding-left: 10px;
+  position: relative;
+  padding-top: 30px;
+}
+
+p.date-obj {
+  color: black;
+  font-size: 10px;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#subnav img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.center-subnav img {
+  margin-top: 65px;
+}
+
+.left-subnav {
+  padding-top: 25px;
+  margin: auto;
+  display: block;
+  line-height: 3.5;
+}
+
+.left-subnav img {
+  height:62px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.trending-topics {
+  margin-bottom: 0;
+}
+
+.trending-topics, .trending-topics-item {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.trending-topics-item{
+  display: inline;
+  padding-left:10px;
+}
+
+.trending-topics-item a {
+  background-color: black;
+  color: white;
+  padding:5px 8px;
 }

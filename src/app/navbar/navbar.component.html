@@ -47,16 +47,26 @@
 
   </div>
 
-  <div id="subnav" class="outer-subnav row">
-      <div class="inner-subnav left-subnav nav col-1">
-
+  <div id="subnav" class="outer-subnav sub-tert-styles row">
+      <div class="inner-subnav justify-center left-subnav nav col-2">
+        <img [src]="'assets/images/foodbowl.png'" alt="">
+        <p class="date-obj">{{today | date}}</p>
       </div>
-      <div class="inner-subnav center-subnav nav col-10">
+      <div class="inner-subnav center-subnav justify-center nav col-8">
         <img [src]="'assets/images/logo.png'" alt="image" class="img-responsive">
       </div>
-      <div class="inner-subnav right-subnav nav col-1">
+      <div class="inner-subnav right-subnav nav col-2">
 
       </div>
+  </div>
+
+  <div id="tertiarynav" class="outer-tertiarynav sub-tert-styles row">
+    <div class="inner-tertiary nav align-items-center justify-center nav col-12">
+      <ul class="trending-topics">TRENDING TOPICS:
+        <li class="trending-topics-item"><a href="#" class="trending-topics-item">Test</a></li>
+        <li class="trending-topics-item"><a href="#" class="trending-topics-item">Test</a></li>
+      </ul>
+    </div>
   </div>
 
 </header>
