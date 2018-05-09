@@ -7,5 +7,5 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent{
   today = Date.now();
-  fixedTimezone = '2015-06-15T09:03:01+0900';
+  fixedTimezone = '2015-06-15T09:03:01+090';
 }

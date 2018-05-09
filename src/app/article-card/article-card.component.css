@@ -2,16 +2,21 @@
   cursor: pointer;
 }
 
+
+
 .article-container-outer {
-  max-width:30%;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .article-container-outer img{
   max-width:100%;
 }
 
 .article-container-inner {
   margin:5px;
+  width: 30%;
 }
 
 .article-headline {
