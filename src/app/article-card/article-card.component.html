@@ -1,5 +1,5 @@
 <ul class="list-unstyled article-container-outer mb-40">
-  <li class="article-container-inner mb-40 card-body card" *ngFor="let article of articles | async">
+  <li class="article-container-inner mb-40 card-body card" *ngFor="let article of articles | async" (click)="goToDetailPage(article)">
 
       <div class="article-images link">
         <img src="{{article.images}}" alt="">

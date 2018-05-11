@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdminComponent } from './admin/admin.component';
 import { routing } from './app.routing';
+import { SingleArticleComponent } from './single-article/single-article.component';
 
 
 export const firebaseConfig = {
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     ArticleCardComponent,
     NavbarComponent,
     FooterComponent,
-    AdminComponent
+    AdminComponent,
+    SingleArticleComponent
   ],
   imports: [
     BrowserModule,

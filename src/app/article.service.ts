@@ -5,11 +5,16 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class ArticleService {
   articles: FirebaseListObservable<any[]>;
+
   constructor(private database: AngularFireDatabase) {
     this.articles = database.list('articles');
   }
 
   getArticle() {
     return this.articles;
+  }
+
+  getArticleById(articleId: string) {
+    return this.database.object('articles/' + articleId);
   }
 }
