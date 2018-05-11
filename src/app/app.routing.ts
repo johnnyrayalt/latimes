@@ -10,12 +10,17 @@ const appRoutes: Routes = [
     component: ArticleCardComponent
   },
   {
-    path: 'articles/:id',
-    component: SingleArticleComponent
-  },
-  {
-    path: 'admin',
-    component: AdminComponent
+    path: 'articles',
+    children: [
+      {
+        path: '',
+        component: ArticleCardComponent
+      },
+      {
+        path: ':id',
+        component: SingleArticleComponent,
+      },
+    ]
   }
 ];
 
