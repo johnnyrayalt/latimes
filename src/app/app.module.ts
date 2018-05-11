@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { ArticleCardComponent } from './article-card/article-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdminComponent } from './admin/admin.component';
+import { routing } from './app.routing';
 
 
 export const firebaseConfig = {
@@ -22,12 +24,14 @@ export const firebaseConfig = {
     AppComponent,
     ArticleCardComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
