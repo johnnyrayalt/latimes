@@ -1,0 +1,22 @@
+<div>
+  <h3>{{(articleToDisplay | async)?.title}}</h3>
+  <h4>{{(articleToDisplay | async)?.artist}}</h4>
+  <p>{{(articleToDisplay | async)?.description}}</p>
+</div>
+<div class="article-images link">
+  <img src="{{(articleToDisplay | async)?.images}}" alt="">
+</div>
+
+<div class="article-headline link">
+  {{(articleToDisplay | async)?.headline}}
+</div>
+
+<div class="article-blurb">
+  {{(articleToDisplay | async)?.blurb}}
+</div>
+
+<div class="author">
+  <p>
+    <img src="{{(articleToDisplay | async)?.author.photo}}" class="author-photo link" alt="">  By <span class="link">{{(articleToDisplay | async)?.author.name}}</span> | {{(articleToDisplay | async)?.datePublished}}
+  </p>
+</div>
