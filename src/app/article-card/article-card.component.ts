@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 import { Article } from "./../models/article.model";
 import { ArticleService } from '../article.service';
 
@@ -9,7 +11,7 @@ import { ArticleService } from '../article.service';
   providers: [ArticleService]
 })
 export class ArticleCardComponent implements OnInit {
-  articles: Article[];
+  articles: FirebaseListObservable<any[]>;
   constructor(private articleService: ArticleService) {}
   ngOnInit () {
       this.articles = this.articleService.getArticle();

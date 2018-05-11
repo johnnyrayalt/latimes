@@ -178,3 +178,44 @@ p.date-obj {
   color: white;
   padding:5px 8px;
 }
+
+.topics-container {
+  width: 200px;
+  position: absolute;
+  background-color: #626669;
+  z-index: 9999999999;
+}
+
+.topics-list-container {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.topics-list-item {
+  padding: 5px 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+.topics-list-item:hover {
+  background-color: #3c3e40;
+}
+
+.topics-list-item a:hover {
+  border-bottom: none;
+}
+
+.line-break {
+  margin: 10px;
+  border-top: 1px solid #afafaf;
+}
+
+.topics-button {
+  margin: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.topics-button h4{
+  font-size: 16px;
+}

@@ -4,9 +4,42 @@
     <div class="inner-sticky-nav left-nav nav col-2">
 
       <div id="topicsNav" class="left-nav-item">
-        <a href="#">
+        <a href="#" (click)="toggleTopics()">
           Topics
         </a>
+        <div class="topics-container" *ngIf="toggleTopic">
+          <ul class="topics-list-container">
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">subscriber services</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">local</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">l.a. now</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">politics</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">business</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">opinion</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">food</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">sports</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">world</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">obituaries</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">real estate</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">california livings</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">technology</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">science</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">travel</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">visuals</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">l.a. times en español</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">e-newspaper</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">extras</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">shop</a></li>
+            <li class="topics-list-item"><a href="#" class="topics-list-item-link">about</a></li>
+          </ul>
+
+          <div class="line-break"></div>
+
+          <div class="btn-warning topics-button">
+            <h4>SUBSCRIBE</h4>
+            <p>4 weeks for only 99¢</p>
+          </div>
+
+        </div>
       </div>
       <div id="searchNav" class="left-nav-item">
         <a href="#">
